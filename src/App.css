@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  background-image: url("mathsbackground.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin-top: -1%;
+  margin-left: -10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#calcBase {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 30vw;
+  height: fit-content;
+  height: 90vh;
+  max-height: 90vh;
+  margin-left: 10%;
+  margin-top: 1%;
+  background-image: linear-gradient(rgb(60, 60, 60), rgb(0, 0, 0));
+  border: outset 10px black;
+  border-radius: 25px;
+}
+
+#displayBox {
+  width: 25vw;
+  height: 3vh;
+  background-image: linear-gradient(rgb(138, 192, 132), rgb(41, 73, 41));
+  margin-top: 1%;
+  border: ridge 5px;
+}
+
+#infoText {
+  color: white;
+  margin: 10%;
+}
+
+#buttonNumb {
+  width: 7vw;
+  height: 7vh;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  border: outset 5px black;
+  background-image: linear-gradient(45deg, rgb(92, 92, 92), rgb(0, 0, 0));
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+  line-height: 10%;
+}
+
+#buttonNumb:active {
+  animation: 0.1s buttonpress linear;
+}
+
+@keyframes buttonpress {
+  0% {
+    background-image: linear-gradient(45deg, rgb(92, 92, 92), rgb(0, 0, 0));
+  }
+  100% {
+    background-image: linear-gradient(180deg, rgb(92, 92, 92), rgb(0, 0, 0));
+  }
+}
